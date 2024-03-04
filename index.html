@@ -44,9 +44,9 @@
 				</div>
 			
 				<div class="topbar-right  sm-hide">
-					<span class="topbar-widget tb-phone">+208 333 9296</span>
-					<span class="topbar-widget tb-email">contact@example.com</span>
-					<span class="topbar-widget tb-opening-hours">Monday - Friday: 8:00 - 23:00</span>
+					
+					<span class="topbar-widget tb-email">contact@devify.co.nz</span>
+					<span class="topbar-widget tb-opening-hours">Monday - Friday: 8:00 - 18:00</span>
 				</div>	
 				<div class="clearfix"></div>
 			</div>
@@ -104,7 +104,7 @@
         <div class="no-bottom no-top" id="content">
             <div id="top"></div>
 			
-			<section class="full-height text-light relative no-top no-bottom vertical-center" data-bgimage="url(images/background/1.jpg) top" data-stellar-background-ratio=".5">
+			<section class="full-height text-light relative no-top no-bottom vertical-center" data-bgimage="url(images/background/2.jpg) top" data-stellar-background-ratio=".5">
                 <div class="overlay-gradient t50">
 					<div class="center-y relative">
 						<div class="container">
@@ -471,11 +471,11 @@
 						
                         <div class="col-lg-2">
                                     <div class="widget">
-                                        <h5>Demo</h5>
+                                        <h5>Pages</h5>
                                         <ul>
-											<li><a href="index.html">Saas</a></li>
-                                            <li><a href="index-startup.html">Startup</a></li>
-                                            <li><a href="index-coworking.html">Co-working</a></li>
+											<li><a href="products-we-developed.html">Products</a></li>
+                                            <li><a href="contact-us.html">Contact</a></li>
+                                            
                                             
                                         </ul>
                                     </div>
@@ -483,11 +483,11 @@
 
                                 <div class="col-lg-2">
                                     <div class="widget">
-                                        <h5>Pages</h5>
+                                        <h5>About</h5>
                                         <ul>
                                             <li><a href="about-us.html">About Us</a></li>
-                                            <li><a href="our-team.html">Our Team</a></li>
-                                            <li><a href="our-history.html">Our History</a></li>
+                                            <li><a href="services-we-provide.html">Our Service</a></li>
+                                           
                                            
                                         </ul>
                                     </div>
@@ -499,12 +499,33 @@
                                 <h5>Newsletter</h5>
 
                                 <p>Signup for our newsletter to get the latest news.</p>
-                                <form action="blank.php" class="row" id="form_subscribe" method="post" name="form_subscribe">
+
+                                <!-- form start with javascript -->
+
+                                <form id="newsletter-form" action="https://formsubmit.co/devifybox@gmail.com" method="POST">
                                     <div class="col text-center">
-                                        <input class="form-control" id="name_1" name="name_1" placeholder="enter your email" type="text" /> <a href="#" id="btn-submit"><i class="arrow_right"></i></a>
+                                        <input type="hidden" name="_captcha" value="false">
+                                        <input type="hidden" name="_next" value="https://test-tech.pages.dev">
+                                        <input class="form-control" id="email" name="email" placeholder="Enter your email" type="email" />
+                                        <a href="#" id="submit-btn"><i class="arrow_right"></i></a>
                                         <div class="clearfix"></div>
                                     </div>
                                 </form>
+                                
+                                <script>
+                                    document.getElementById("submit-btn").addEventListener("click", function(event) {
+                                        event.preventDefault(); // Prevent the default behavior of the anchor tag
+                                
+                                        // Get the form element
+                                        var form = document.getElementById("newsletter-form");
+                                
+                                        // Submit the form
+                                        form.submit();
+                                    });
+                                </script>
+
+                                <!-- form end with javascript -->
+
                                 <div class="spacer-10"></div>
                                 <small>Your email is safe with us.</small>
                             </div>
@@ -513,7 +534,7 @@
 
                     <div class="row">
                         <div class="col-md-6 sm-text-center mb-sm-30">
-                            <div class="mt10">&copy; Copyright 2023 - Bluetec by Designesia</div>
+                            <div class="mt10">&copy; Copyright 2024 - Devify</div>
                         </div>
 
                         <div class="col-md-6 text-md-right text-sm-left">
